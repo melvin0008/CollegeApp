@@ -1,5 +1,5 @@
 CollegeApp
 ==========
 
+Application using TxtWeb and Laravel
 
-An Application using txtweb and Laravel

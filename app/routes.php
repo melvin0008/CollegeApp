@@ -11,5 +11,5 @@
 |
 */
 
-Route::get('/collegeapp/{data}', 'CollegeappController@getinfo');
-
+//Route::get('/collegeapp/{data}', 'CollegeappController@getinfo');
+Route::get('/', 'CollegeappController@getinfo');

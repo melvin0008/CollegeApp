@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
-class CreateAttendancedb extends Migration {
+class CreateUsersTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,15 +12,15 @@ class CreateAttendancedb extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('attendancedb', function(Blueprint $table)
+		Schema::create('users', function(Blueprint $table)
 		{
-			
-			$table->string('attendance');
+			$table->string('mobileno')->unique();
+			$table->string('rollno')->unique;
+			$table->string('name');
 			$table->increments('id');
 			$table->timestamps();
 		});
 	}
-
 
 	/**
 	 * Reverse the migrations.
@@ -29,7 +29,8 @@ class CreateAttendancedb extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('attendancedb');
+		//
+		Schema::drop('users');
 	}
 
 }

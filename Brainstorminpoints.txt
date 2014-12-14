@@ -3,3 +3,9 @@ Attendance- Subject wise
 Excel Sheet uploaded by teachers-UI
 
 api call for retreival
+
+a. txtweb-mobile: The mobile number of the end user in hash format
+b. txtweb-message: Message sent by the end user
+c. txtweb-id: Unique identifier for the message
+d. txtweb-verifyid: The id used to verify the source. Check API documentation for more details
+e. txtweb-protocol: The protocol through which the message was received

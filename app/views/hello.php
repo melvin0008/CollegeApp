@@ -38,7 +38,7 @@
 </head>
 <body>
 	<div class="welcome">
-		Hello {{{$time()}}}
+		Hello <?php echo "Mel"?>
 	</div>
 </body>
 </html>

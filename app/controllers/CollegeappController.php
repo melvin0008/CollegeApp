@@ -19,8 +19,8 @@ class CollegeappController extends BaseController {
 	{
 
 		//return Input::all();
-		$mobileno=Input::get('txtweb-mobile');
-		$textmessage=Input::get('txtweb-message');
+		$mobileno=Input::get('txtweb-mobile',"SOME");
+		$textmessage=Input::get('txtweb-message',"OOO");
 		return View::make('hello',array('mobile_no' => $mobileno,'text'=>$textmessage));
 // 		$mobileno="9049733143";
 // 		$item=Attendance::where('mobileno','=',$mobileno)->get();;	 

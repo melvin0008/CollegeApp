@@ -38,7 +38,7 @@
 </head>
 <body>
 	<div class="welcome">
-		Hello 
+		Hello {{{$time()}}}
 	</div>
 </body>
 </html>

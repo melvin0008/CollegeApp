@@ -17,4 +17,4 @@ Route::get('/receive', 'CollegeappController@getinfo');
 
 Route::get('/',function(){
 	return "Hello";
-})
+});

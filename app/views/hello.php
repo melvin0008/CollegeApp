@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	 <meta http-equiv='Content-Type' content='text/html;' />
-    //Set content to text/html
     <meta name='txtweb-appkey' content='5e4a8fc6-11e2-4de9-85f6-b8dbae569461' />
 	<title>Laravel PHP Framework</title>
 	<style>
@@ -38,7 +37,7 @@
 </head>
 <body>
 	<div class="welcome">
-		Hello <?php echo "Mel"?>
+		Hello <?php echo $mobile_no; echo $text;?>
 	</div>
 </body>
 </html>

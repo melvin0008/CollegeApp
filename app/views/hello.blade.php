@@ -38,8 +38,7 @@
 </head>
 <body>
 	<div class="welcome">
-		Hello {{{isset($mobile_no) ? $mobileno : '9099497143'}}}
-		{{{isset($text) ? $text : 'Oh Crap'}}}
+		Hello 
 	</div>
 </body>
 </html>

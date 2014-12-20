@@ -17,14 +17,16 @@ class CollegeappController extends BaseController {
 
 	 public function getinfo()
 	{
-		$mobileno="9049733143";
-		$item=Attendance::where('mobileno','=',$mobileno)->get();;	 
-		return $item[0]->attendance;
-// 				$user = new Attendance;
 
-// $user->mobileno = "9049733143";
-// $user->attendance= "20";
-// $user->save();
+		return Input::all();
+// 		$mobileno="9049733143";
+// 		$item=Attendance::where('mobileno','=',$mobileno)->get();;	 
+// 		return $item[0]->attendance;
+// // 				$user = new Attendance;
+
+// // $user->mobileno = "9049733143";
+// // $user->attendance= "20";
+// // $user->save();
 
 	}
 }

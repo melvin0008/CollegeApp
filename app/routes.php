@@ -12,4 +12,9 @@
 */
 
 //Route::get('/collegeapp/{data}', 'CollegeappController@getinfo');
-Route::get('/', 'CollegeappController@getinfo');
+Route::get('/receive', 'CollegeappController@getinfo');
+
+
+Route::get('/',function(){
+	return "Hello";
+})

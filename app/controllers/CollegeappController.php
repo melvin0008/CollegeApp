@@ -18,7 +18,8 @@ class CollegeappController extends BaseController {
 	 public function getinfo()
 	{
 
-		return Input::all();
+		//return Input::all();
+		return View::make('hello');
 // 		$mobileno="9049733143";
 // 		$item=Attendance::where('mobileno','=',$mobileno)->get();;	 
 // 		return $item[0]->attendance;

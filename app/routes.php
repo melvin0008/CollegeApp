@@ -16,5 +16,9 @@ Route::get('/receive', 'CollegeappController@getinfo');
 
 
 Route::get('/',function(){
-	return "Hello";
+	return View::make('index');
 });
+
+
+Route::post('/auth/login', array('before' => 'csrf_json', 'uses' => 'AuthController@login'));
+Route::get('/auth/logout', 'AuthController@logout');

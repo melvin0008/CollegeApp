@@ -1,4 +1,4 @@
-mitcoe.factory("AuthenticationService", function($http, $sanitize, SessionService, FlashService, CSRF_TOKEN) {
+mitcoe.factory("AuthenticationService", function($http,$window, $sanitize, SessionService, FlashService, CSRF_TOKEN) {
 
   var cacheSession   = function() {
     SessionService.set('authenticated', true);

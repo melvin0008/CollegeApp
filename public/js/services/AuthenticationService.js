@@ -22,7 +22,7 @@ mitcoe.factory("AuthenticationService", function($http, $sanitize, SessionServic
 
   return {
     login: function(credentials) {
-      var login = $http.post("/auth/login", sanitizeCredentials(credentials));
+      var login = $http.post($window.location.origin+"/auth/login", sanitizeCredentials(credentials));
       login.success(cacheSession);
       login.success(FlashService.clear);
       login.error(loginError);

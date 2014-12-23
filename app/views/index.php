@@ -39,7 +39,7 @@
 </head>
 <body ng-app="mitcoe">
 
-    <div ng-show="{{flash}}" class="alert alert-danger" role="alert">{{flash}}</div>
+    <div ng-show="flash" class="alert alert-danger" role="alert">{{flash}}</div>
 
 		<div  ui-view></div>
     

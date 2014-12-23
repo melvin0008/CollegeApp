@@ -40,6 +40,8 @@
 	
 </head>
 <body ng-app="mitcoe">
+
+    {{flash}}
 		<div  ui-view></div>
     
 

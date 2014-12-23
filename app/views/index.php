@@ -39,7 +39,9 @@
 </head>
 <body ng-app="mitcoe">
 
-    <div ng-show="flash" class="alert alert-danger" role="alert">{{flash}}</div>
+    <div ng-show="flash" class="alert alert-danger" role="alert">
+      <a href="#" class="close" data-dismiss="alert">&times;</a>
+      <center>{{flash}}</center></div>
 
 		<div  ui-view></div>
     

@@ -1,0 +1,21 @@
+.card {
+	width: 300px;
+  position: relative;
+  display: inline-block;
+margin: 30px;
+height: 300px;
+overflow: hidden;
+text-align: center;
+border-radius: 5px;
+color: #fff;
+opacity: 0.8;
+  transition: 0.5s ease-in-out;
+
+background-color: rgb(173, 168, 177);
+}
+
+.card:hover{
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}

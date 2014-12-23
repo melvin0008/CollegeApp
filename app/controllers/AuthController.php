@@ -24,7 +24,7 @@ class AuthController extends BaseController {
       } else {    
 
         // validation not successful, send back to form 
-        return Redirect::to('/login');
+        return Response::json(array('flash' => 'Logged Out!'));
 
       }
    //  if(MitcoeUser::getlogin(array('email' => Input::json('email'), 'password' => Input::json('password'))))

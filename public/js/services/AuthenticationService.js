@@ -1,4 +1,4 @@
-mitcoe.factory("AuthenticationService", function($http,$window, $sanitize, SessionService, FlashService, CSRF_TOKEN) {
+mitcoe.factory("AuthenticationService", function($http, $sanitize, SessionService, FlashService, CSRF_TOKEN) {
 
   var cacheSession   = function() {
     SessionService.set('authenticated', true);
@@ -22,7 +22,7 @@ mitcoe.factory("AuthenticationService", function($http,$window, $sanitize, Sessi
 
   return {
     login: function(credentials) {
-      var login = $http.post($window.location.origin+"/auth/login", sanitizeCredentials(credentials));
+      var login = $http.post("/auth/login", sanitizeCredentials(credentials));
       login.success(cacheSession);
       login.success(FlashService.clear);
       login.error(loginError);

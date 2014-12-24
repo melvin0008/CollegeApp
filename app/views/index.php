@@ -24,7 +24,6 @@
     <meta name="author" content="Melvin Philips">
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
     <meta name="keywords" content="Attendance Management">
-    <script src="lib/js/others/html5-trunk.js"></script>
     <link href="icomoon/style.css" rel="stylesheet">
     <link href="lib/css/select/select.min.css" rel="stylesheet">
     <!--[if lte IE 7]>
@@ -33,13 +32,17 @@
 
     <!-- bootstrap css -->
     <link href="lib/css/bootstrap/bootstrap.min.css" rel="stylesheet">
-
     <!-- custom css -->
   <!--  <link href="lib/css/bootstrap-responsive.min.css" rel="stylesheet">
   <link href="admin/css/app.css" rel="stylesheet" /> -->
 	
 </head>
 <body ng-app="mitcoe">
+
+    <div ng-show="flash" class="alert alert-danger" role="alert">
+      <a href="#" class="close" data-dismiss="alert">&times;</a>
+      <center>{{flash}}</center></div>
+
 		<div  ui-view></div>
     
 

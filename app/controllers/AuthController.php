@@ -19,12 +19,12 @@ class AuthController extends BaseController {
         // redirect them to the secure section or whatever
         // return Redirect::to('secure');
         // for now we'll just echo success (even though echoing in a controller is bad)
-        echo 'SUCCESS!';
+       return Response::json(array('flash'=>'successfully logged in'));
 
       } else {    
 
         // validation not successful, send back to form 
-        return Redirect::to('/login');
+         return Response::json(array('flash' => 'Invalid username or password'), 400);
 
       }
    //  if(MitcoeUser::getlogin(array('email' => Input::json('email'), 'password' => Input::json('password'))))

@@ -11,7 +11,7 @@ class AdminController extends BaseController {
 		$name=$filereceived->getClientOriginalName();
 		if(in_array($filereceived->getMimeType(),array('application/vnd.openxmlformats-officedocument.spreadsheetml.sheet','application/vnd.ms-excel','text/csv','application/vnd.ms-office')) !== FALSE)
 		{
-			$filereceived->move(public_path().$destinationPath);
+			$filereceived->move(public_path().$destinationPath,$name);
 			return Response::make('Success', 200);
 		}
 		else

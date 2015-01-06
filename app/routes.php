@@ -22,3 +22,5 @@ Route::get('/',function(){
 
 Route::post('/auth/login', array('before' => 'csrf_json', 'uses' => 'AuthController@login'));
 Route::get('/auth/logout', 'AuthController@logout');
+
+Route::post('/attendance/addtolist','AdminController@processexcel');

@@ -72,6 +72,7 @@
       <!--Controllers-->
       <script src="js/controllers/LoginController.js"></script>
       <script src="js/controllers/HomeController.js"></script>
+      <script src="js/controllers/AttendanceController.js"></script>
       <!--Service-->
       <script src="js/services/AuthenticationService.js"></script>
       <script src="js/services/FlashService.js"></script>

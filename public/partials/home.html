@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>RDash AngularJS</title>
+  <title>RDash AngularJS</title>
   <!-- STYLES -->
   <link rel="stylesheet" href="css/main.min.css"/>
-  
   <!-- SCRIPTS -->
   <!-- Custom Scripts -->
  
@@ -25,50 +24,25 @@
           </a>
         </li>
         <li class="sidebar-title"><span>NAVIGATION</span></li>
-        <li class="sidebar-list">
-          <a ui-sref=".collections">Collections <span class="menu-icon fa fa-tachometer"></span></a>
-        </li>
-        <li class="sidebar-list">
-          <a ui-sref=".invoice">Invoicing <span class="menu-icon fa fa-table"></span></a>
+        <li class="sidebar-list" data-toggle="pill">
+          <a ui-sref=".addattendance">Add Attendance <span class="menu-icon fa fa-tachometer"></span></a>
         </li>
         <li class="sidebar-list" >
-                <a href="#/admin" class="dropdown-toggle" data-toggle="dropdown"  data-delay="1000" data-close-others="false">
-                  <img src="img/avatar.jpg">
-                </a>
-                <ul class="dropdown-menu dropdown-menu-right">
-
-                  <li class="dropdown-header">
-                    Joe Bloggs
-                  </li>
-                  <li class="divider"></li>
-                  <li class="link">
-                    <a href="#">
-                      Profile
-                    </a>
-                  </li>
-                  <li class="link">
-                    <a href="#">
-                      Menu Item
-                    </a>
-                  </li>
-                  <li class="link">
-                    <a href="#">
-                      Menu Item
-                    </a>
-                  </li>
-                  <li class="divider"></li>
-                  <li class="link">
-                    <a href="#">
-                      Logout
-                    </a>
-                  </li>
-                </ul>
-              </li>
+          <a href="javascript:;" data-toggle="collapse" data-target="#demo"> Invoicing<span class="menu-icon fa fa-fw fa-caret-down"></span></a>
+          <ul id="demo" class="collapse submenu">
+            <li >
+              <a ui-sref=".addinvoice">Add Invoice Sets<span class="menu-icon fa fa-tachometer"></span></a>
+            </li>
+            <li >
+              <a ui-sref=".viewinvoice">View Invoice Sets <span class="menu-icon fa fa-tachometer"></span></a>
+            </li>
+          </ul>
+        </li>
       </ul>
       <div class="sidebar-footer">
         <div class="col-xs-4">
-          <a href="https://feecounter.com" target="_blank">
-            Feecounter
+          <a href="http://melvinphilips.com" target="_blank">
+            ME
           </a>
         </div>
         <div class="col-xs-4">

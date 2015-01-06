@@ -12,6 +12,11 @@ $urlRouterProvider.otherwise("/login");
     url:'/home',
     templateUrl: ' partials/home.html',
     controller: 'HomeController'
+  })
+  .state('home.addattendance',{
+    url:'/addattendance',
+    templateUrl: ' partials/home.addattendance.html',
+    controller: 'AttendanceController'
   });
 
 });

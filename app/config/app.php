@@ -122,6 +122,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
+		'Maatwebsite\Excel\ExcelServiceProvider',
 
 	),
 
@@ -163,6 +164,7 @@ return array(
 		'Crypt'             => 'Illuminate\Support\Facades\Crypt',
 		'DB'                => 'Illuminate\Support\Facades\DB',
 		'Eloquent'          => 'Illuminate\Database\Eloquent\Model',
+		'Excel' 			=> 'Maatwebsite\Excel\Facades\Excel',
 		'Event'             => 'Illuminate\Support\Facades\Event',
 		'File'              => 'Illuminate\Support\Facades\File',
 		'Form'              => 'Illuminate\Support\Facades\Form',
